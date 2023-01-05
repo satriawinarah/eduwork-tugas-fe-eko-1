@@ -20,7 +20,7 @@ const Details = () => {
   console.log(getuserdata);
 
   const getdata = async () => {
-    const res = await fetch(`/getuser/${id}`, {
+    const res = await fetch(`https://eduwork-tugas-be-eko-1.vercel.app/getuser/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const Details = () => {
   }, []);
 
   const deleteuser = async (id) => {
-    const res2 = await fetch(`/deleteuser/${id}`, {
+    const res2 = await fetch(`https://eduwork-tugas-be-eko-1.vercel.app/deleteuser/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
