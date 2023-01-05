@@ -17,7 +17,7 @@ export const Home = () => {
   const {dltdata, setDLTdata} = useContext(deldata)
 
   const getdata = async (e) => {
-    const res = await fetch('/getdata', {
+    const res = await fetch('https://eduwork-tugas-be-eko-1.vercel.app/getdata', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ export const Home = () => {
   }, []);
 
   const deleteuser = async (id) => {
-    const res2 = await fetch(`/deleteuser/${id}`, {
+    const res2 = await fetch(`https://eduwork-tugas-be-eko-1.vercel.app/deleteuser/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
