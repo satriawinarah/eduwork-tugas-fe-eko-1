@@ -33,7 +33,7 @@ const Register = () => {
 
     const { name, email, work, add, mobile, desc, age } = inpval;
 
-    const res = await fetch('/register', {
+    const res = await fetch('https://eduwork-tugas-be-eko-1.vercel.app/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
